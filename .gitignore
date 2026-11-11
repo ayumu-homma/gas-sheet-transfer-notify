@@ -1,0 +1,5 @@
+.clasp.json
+.clasprc.json
+*.gs.bak
+.DS_Store
+node_modules/

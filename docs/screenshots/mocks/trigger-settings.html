@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>トリガー設定の項目</title>
+<style>
+  html, body { margin: 0; background: #f4f5f7; font-family: "Noto Sans CJK JP", "Noto Sans JP", sans-serif; color: #202124; }
+  .wrap { padding: 28px 32px 24px; }
+  .kicker { font-size: 13px; color: #5f6368; margin: 0 0 6px; }
+  h1 { font-size: 22px; margin: 0 0 8px; }
+  .caption { font-size: 13px; color: #5f6368; margin: 0 0 16px; line-height: 1.5; }
+  table { border-collapse: collapse; width: 100%; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+  th { background: #e8f0fe; text-align: left; font-size: 13px; padding: 10px 14px; border: 1px solid #c5d4f0; width: 40%; }
+  td { font-size: 13px; padding: 10px 14px; border: 1px solid #e0e0e0; font-weight: 700; }
+  .note { margin-top: 14px; font-size: 12px; color: #5f6368; line-height: 1.6; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="kicker">説明用の図（実際の Apps Script 画面のスクリーンショットではありません）</p>
+    <h1>編集時トリガーに選ぶ項目</h1>
+    <p class="caption">インストール可能なトリガーとして、次の組み合わせで追加します。単純な onEdit ではメールを送れません。</p>
+    <table>
+      <tr><th>実行する関数</th><td>handleEdit</td></tr>
+      <tr><th>イベントのソース</th><td>スプレッドシートから</td></tr>
+      <tr><th>イベントの種類</th><td>編集時</td></tr>
+    </table>
+    <p class="note">フォーム送信に切り替える場合は、関数を handleFormSubmit、イベントの種類を「フォーム送信時」にします。標準手順ではどちらか一方だけを使います。</p>
+  </div>
+</body>
+</html>

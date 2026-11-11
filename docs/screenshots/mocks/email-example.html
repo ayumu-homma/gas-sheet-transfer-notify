@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>通知メールの例</title>
+<style>
+  html, body { margin: 0; background: #f4f5f7; font-family: "Noto Sans CJK JP", "Noto Sans JP", sans-serif; color: #202124; }
+  .wrap { padding: 28px 32px 24px; }
+  .kicker { font-size: 13px; color: #5f6368; margin: 0 0 6px; }
+  h1 { font-size: 22px; margin: 0 0 16px; }
+  .mail { background: #fff; border: 1px solid #dadce0; border-radius: 8px; padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+  .row { display: grid; grid-template-columns: 5em 1fr; gap: 8px; font-size: 13px; margin-bottom: 6px; }
+  .row .k { color: #5f6368; }
+  .subj { font-size: 16px; font-weight: 700; margin: 12px 0; }
+  pre { white-space: pre-wrap; font-family: inherit; font-size: 13px; line-height: 1.6; margin: 0; background: #f8f9fa; padding: 14px 16px; border-radius: 6px; }
+  .note { margin-top: 14px; font-size: 12px; color: #5f6368; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="kicker">説明用の図（実際の Gmail 画面のスクリーンショットではありません）</p>
+    <h1>通知メールの例</h1>
+    <div class="mail">
+      <div class="row"><span class="k">宛先</span><span>NOTIFY_TO に設定した、自分のテスト用アドレス</span></div>
+      <div class="row"><span class="k">件名</span><span class="subj">【サンプル】新しい要対応行を転記しました</span></div>
+      <pre>これは公開サンプルの通知です。受注案件の通知ではありません。
+
+発生元: manualTest
+タイムスタンプ: 2026-11-11 10:00:00
+名前（ダミー）: サンプルA
+内容: 週次の在庫メモを転記してほしい（ダミー）
+メール（ダミー・参考）: sample-user@example.com
+
+このメールはスクリプト プロパティ NOTIFY_TO のテスト用アドレスへ送っています。</pre>
+    </div>
+    <p class="note">行のダミーアドレスへは送りません。</p>
+  </div>
+</body>
+</html>
